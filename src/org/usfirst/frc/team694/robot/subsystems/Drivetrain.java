@@ -9,6 +9,7 @@ package org.usfirst.frc.team694.robot.subsystems;
 
 import org.usfirst.frc.team694.robot.RobotMap;
 import org.usfirst.frc.team694.robot.commands.DrivetrainDriveSystemCommand;
+import org.usfirst.frc.team694.robot.commands.DrivetrainMarioKartDrive;
 import org.usfirst.frc.team694.util.LineSensor;
 
 import com.ctre.phoenix.motorcontrol.FeedbackDevice;
@@ -118,7 +119,7 @@ public class Drivetrain extends Subsystem {
     @Override
     public void initDefaultCommand() {
         //setDefaultCommand(new DriveCommand());
-        setDefaultCommand(new DrivetrainDriveSystemCommand());
+        setDefaultCommand(new DrivetrainMarioKartDrive());
     }
 
     //@Override
